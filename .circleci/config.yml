@@ -25,3 +25,10 @@ jobs:
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
           tag: "x86-${CIRCLE_SHA1}"
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - arm-build
+      - x86-build
