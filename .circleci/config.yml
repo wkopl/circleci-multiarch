@@ -14,6 +14,7 @@ jobs:
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
           tag: "arm-${CIRCLE_SHA1}"
+          platform: linux/arm64
 
   x86-build:
     machine:
@@ -25,6 +26,7 @@ jobs:
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
           tag: "x86-${CIRCLE_SHA1}"
+          platform: linux/x86
 
 workflows:
   version: 2
