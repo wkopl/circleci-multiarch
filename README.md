@@ -1,2 +1,3 @@
 # circleci-multiarch
-A demo of a circleci multiarch build for Graviton and x86
+
+A simple demo of a circleci multi-architecture build for Graviton and x86.
