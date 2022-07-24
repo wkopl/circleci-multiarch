@@ -26,7 +26,7 @@ jobs:
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
           tag: "x86-${CIRCLE_SHA1}"
-          platform: linux/amd86
+          platform: linux/amd64
 
 workflows:
   version: 2
