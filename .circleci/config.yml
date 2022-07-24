@@ -30,7 +30,7 @@ jobs:
 
 workflows:
   version: 2
-  deploy:
+  multiarch-deploy:
     jobs:
       - arm-build
       - x86-build
