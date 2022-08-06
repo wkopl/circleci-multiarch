@@ -15,6 +15,17 @@ jobs:
           region: ${AWS_DEFAULT_REGION}
           tag: "${CIRCLE_BUILD_NUM}-${CIRCLE_SHA1}"
           platform: linux/arm64
+  manifests:
+    description: "Make and Push Manifests for Docker"
+    steps:
+      - checkout
+      - run:
+          name: Make Manifests
+          command: |
+            ./.ci/manifest.sh --image ${DOCKER_IMAGE} --manifest ${VERSION}-${CIRCLE_SHA1} --push
+            ./.ci/manifest.sh --image ${DOCKER_IMAGE} --manifest ${CIRCLE_SHA1} --push
+            ./.ci/manifest.sh --image ${DOCKER_IMAGE} --manifest ${VERSION} --push
+            ./.ci/manifest.sh --image ${DOCKER_IMAGE} --manifest latest --push          
 
   x86-build:
     machine:
