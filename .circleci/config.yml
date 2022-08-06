@@ -13,7 +13,7 @@ jobs:
       - aws-ecr/build-and-push-image:
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
-          tag: "arm${VERSION}-${CIRCLE_SHA1}"
+          tag: "${CIRCLE_BUILD_NUM}-${CIRCLE_SHA1}"
           platform: linux/arm64
 
   x86-build:
