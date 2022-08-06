@@ -6,8 +6,8 @@ orbs:
 jobs:
   arm-build:
     machine:
-      image: ubuntu-2004:current
-    resource_class: arm.large
+      image: ubuntu-2204:current
+    resource_class: arm.medium
     steps:
       - checkout
       - aws-ecr/build-and-push-image:
@@ -18,8 +18,8 @@ jobs:
 
   x86-build:
     machine:
-      image: ubuntu-2004:current
-    resource_class: x86.large
+      image: ubuntu-2204:current
+    resource_class: x86.medium
     steps:
       - checkout
       - aws-ecr/build-and-push-image:
