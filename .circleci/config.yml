@@ -7,7 +7,7 @@ jobs:
   arm-build:
     machine:
       image: ubuntu-2004:current
-    resource_class: arm.medium
+    resource_class: arm.large
     steps:
       - checkout
       - aws-ecr/build-and-push-image:
@@ -19,7 +19,7 @@ jobs:
   x86-build:
     machine:
       image: ubuntu-2004:current
-    resource_class: x86.medium
+    resource_class: x86.large
     steps:
       - checkout
       - aws-ecr/build-and-push-image:
