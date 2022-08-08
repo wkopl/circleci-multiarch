@@ -19,7 +19,7 @@ jobs:
   x86-build:
     machine:
       image: ubuntu-2004:current
-    resource_class: medium
+    resource_class: x86.medium
     steps:
       - checkout
       - aws-ecr/build-and-push-image:
