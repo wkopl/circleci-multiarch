@@ -19,9 +19,13 @@ jobs:
   x86-build:
     machine:
       image: ubuntu-2004:current
-    resource_class: x86.medium
+    resource_class: medium
     steps:
       - checkout
+      - run:
+          command: |
+            echo Getting metadata
+            curl http://169.254.169.254/latest/meta-data/
       - aws-ecr/build-and-push-image:
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
