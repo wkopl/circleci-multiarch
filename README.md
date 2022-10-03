@@ -2,14 +2,11 @@
 
 A simple demo of a circleci multi-architecture build for Graviton and x86.
 
-
 The pipeline is located here:  https://app.circleci.com/pipelines/github/wkopl/circleci-multiarch?branch=main
 
 # Example:
 [![CircleCI](https://circleci.com/gh/wkopl/circleci-multiarch.svg?style=svg)](https://circleci.com/gh/wkopl/circleci-multiarch)
 
-
-Multiarch for the win!
 
 ## Prerequisites
 
@@ -18,3 +15,6 @@ Multiarch for the win!
 3.	GitHub Account - CircleCI connects directly to a GitHub account. In addition, there will need to be a repository in this account that contains the source code for the project, as well as the CircleCI configuration file.
 4.	CircleCI Account - There are a variety of ways to create a new CircleCI account, for the sake of simplicity, connecting a GitHub account is the easiest way to create a CircleCI account. This also enables CircleCI to have access to the repositories in the account.
 5.	 Fork this example code repository in GitHub into the aforementioned GitHub account.
+
+
+Multiarch for the win!
