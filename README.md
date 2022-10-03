@@ -4,8 +4,6 @@ A simple demo of a circleci multi-architecture build for Graviton and x86.
 
 The pipeline is located here:  https://app.circleci.com/pipelines/github/wkopl/circleci-multiarch?branch=main
 
-# Example:
-[![CircleCI](https://circleci.com/gh/wkopl/circleci-multiarch.svg?style=svg)](https://circleci.com/gh/wkopl/circleci-multiarch)
 
 
 ## Prerequisites
@@ -17,4 +15,6 @@ The pipeline is located here:  https://app.circleci.com/pipelines/github/wkopl/c
 5.	 Fork this example code repository in GitHub into the aforementioned GitHub account.
 
 
-Multiarch for the win!
+
+### Build Status
+[![CircleCI](https://circleci.com/gh/wkopl/circleci-multiarch.svg?style=svg)](https://circleci.com/gh/wkopl/circleci-multiarch)
