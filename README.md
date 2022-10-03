@@ -13,3 +13,4 @@ The pipeline is located here:  https://app.circleci.com/pipelines/github/wkopl/c
 
 Multiarch for the win!
 
+foo
