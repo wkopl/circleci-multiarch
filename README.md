@@ -18,4 +18,3 @@ Multiarch for the win!
 3.	GitHub Account - CircleCI connects directly to a GitHub account. In addition, there will need to be a repository in this account that contains the source code for the project, as well as the CircleCI configuration file.
 4.	CircleCI Account - There are a variety of ways to create a new CircleCI account, for the sake of simplicity, connecting a GitHub account is the easiest way to create a CircleCI account. This also enables CircleCI to have access to the repositories in the account.
 5.	 Fork this example code repository in GitHub into the aforementioned GitHub account.
-![image](https://user-images.githubusercontent.com/98848112/193504265-193a2dac-4b8c-4fdf-b3c1-53c6e9249b8a.png)
