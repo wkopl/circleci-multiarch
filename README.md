@@ -4,8 +4,6 @@ A simple demo of a circleci multi-architecture build for Graviton and x86.
 
 The pipeline is located here:  https://app.circleci.com/pipelines/github/wkopl/circleci-multiarch?branch=main
 
-
-
 ## Prerequisites
 
 1.	AWS Account – To complete the steps of this blog, it will be necessary to open or have access to an AWS account. In addition, create an AWS Identity and Access Management (IAM) user with programmatic access to the account. This user account will need to have full access to the Elastic Container Registry in order to create a repository and to push the container builds into the repository.  The specific policy to attach to the IAM user is called: AmazonEC2ContainerRegistryFullAccess.  Please save the Access Key ID and the Secret Access Key.
